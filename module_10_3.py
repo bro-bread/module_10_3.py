@@ -31,7 +31,8 @@ class Bank:
 
                 if random_numb > self.balance:
                     print("Запрос отклонён, недостаточно средств")
-        lock.acquire()
+                    lock.acquire()
+                    lock.release()
 
 
 gera = Bank()
